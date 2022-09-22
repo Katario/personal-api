@@ -3,7 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => {
   const name = process.env.NAME || 'World';
-  res.send(`Hello ${name}! This is my test with nodemon included!`);
+  res.send(`Hello ${name}! And another one!`);
 });
 
 const port = parseInt(process.env.PORT) || 4000;
